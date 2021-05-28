@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const KEY = 'AIzaSyA5GWULMe9i0IOoXanZADXSMLl_Hj7qPCU'
+// const KEY = 'AIzaSyA5GWULMe9i0IOoXanZADXSMLl_Hj7qPCU'
 
 
 export default axios.create({
@@ -8,6 +8,6 @@ export default axios.create({
   params: {
     part: 'snippet',
     maxResults: 5,
-    key: KEY
+    key: process.env.REACT_APP_API_KEY
   }
 });
