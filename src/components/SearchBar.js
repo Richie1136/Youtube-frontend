@@ -12,14 +12,15 @@ const SearchBar = ({ onFormSubmit }) => {
     onFormSubmit(term)
   };
   return (
-    <div className="search-bar ui segment">
+    <div className="search-bar ui segment" style={{ 'width': '86.5%' }}>
       <form onSubmit={onSubmit} className="ui form">
         <div className="field">
-          <label>Video Search</label>
           <input
+            style={{ 'backgroundColor': '#121212', 'color': 'white', 'width': '100%' }}
             type="text"
             value={term}
-            onChange={(event) => setTerm(event.target.value)}
+            onChange={onInputChange}
+            placeholder='Search'
           />
         </div>
       </form>
