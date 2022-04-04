@@ -24,8 +24,8 @@ const SearchBar = ({ onFormSubmit }) => {
             onChange={onInputChange}
             placeholder='Search'
           />
-          <i className="fa-solid fa-magnifying-glass" style={{ 'backgroundColor': 'hsla(0, 0%, 100%, 0.08)', 'color': 'white' }}>
-            <FaSearch />
+          <i className="fa-solid fa-magnifying-glass" style={{ 'backgroundColor': 'hsla(0, 0%, 100%, 0.08)', 'color': 'white', 'width': '40px' }}>
+            <FaSearch style={{ 'display': 'inline-block', 'width': '100%', 'marginTop': '10px' }} />
           </i>
         </div>
       </form>
