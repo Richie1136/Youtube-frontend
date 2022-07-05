@@ -8,13 +8,15 @@ import './App.css'
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null)
 
-  const [videos, search] = useVideos('Sports');
+  const [videos, search] = useVideos('');
 
   useEffect(() => {
-
     setSelectedVideo(videos[0]);
-
   }, [videos])
+
+  const handleVideoSelect = (video) => {
+    setSelectedVideo(video)
+  }
 
   return (
     <div className="ui container">
@@ -26,7 +28,7 @@ const App = () => {
           </div>
           <div className="five wide column">
             <VideoList
-              onVideoSelect={(video) => setSelectedVideo(video)}
+              onVideoSelect={handleVideoSelect}
               videos={videos}
             />
           </div>

@@ -8,7 +8,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
 
   return (
     <div className="video-item item" onClick={handleVideoSelect}>
-      <img alt={video.snippet.title} className="ui image" src={video.snippet.thumbnails.medium.url} />
+      <img className="ui image" src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} />
       <div className="content">
         <div className="header" style={{ 'color': 'white' }}>{video.snippet.title}</div>
       </div>
