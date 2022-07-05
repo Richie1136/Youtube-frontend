@@ -5,6 +5,11 @@ import axios from 'axios'
 
 console.log(process.env.REACT_APP_YOUTUBE_API_KEY)
 let key = process.env.REACT_APP_YOUTUBE_API_KEY
+console.log(key)
+
+let Api = {
+  key: process.env.REACT_APP_YOUTUBE_API_KEY
+}
 
 // console.log(KEY)
 
@@ -14,6 +19,6 @@ export default axios.create({
   params: {
     part: 'snippet',
     maxResults: 5,
-    key: key,
+    key: Api.key,
   }
 });
