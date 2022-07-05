@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import SearchBar from './SearchBar'
-import VideoList from './VideoList'
-import VideoDetail from './VideoDetail'
-import useVideos from '../hooks/useVideos'
+import { useState, useEffect } from 'react'
+import SearchBar from './components/searchbar/SearchBar'
+import VideoList from './components/videolist/VideoList'
+import VideoDetail from './components/videodetail/VideoDetail'
+import useVideos from './hooks/useVideos'
 import './App.css'
 
 const App = () => {
