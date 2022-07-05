@@ -2,6 +2,7 @@ import Loading from "../loading/Loading";
 
 
 const VideoDetail = ({ video }) => {
+
   if (!video) {
     return <Loading />
   }

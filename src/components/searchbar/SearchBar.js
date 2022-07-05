@@ -5,6 +5,7 @@ import { FaSearch } from 'react-icons/fa'
 
 const SearchBar = ({ onFormSubmit }) => {
   const [term, setTerm] = useState('')
+
   const onInputChange = (event) => {
     setTerm(event.target.value)
   };

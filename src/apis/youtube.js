@@ -1,7 +1,5 @@
 import axios from 'axios'
 
-// Whenever i hide this API KEY .env i recieve a 403 error code
-
 let key = process.env.REACT_APP_YOUTUBE_API_KEY
 
 
