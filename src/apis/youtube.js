@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const key = process.env.REACT_APP_YOUTUBE_API_KEY
+const APIKEY = process.env.REACT_APP_API_KEY
 
 
 export default axios.create({
@@ -8,6 +8,6 @@ export default axios.create({
   params: {
     part: 'snippet',
     maxResults: 5,
-    key: key,
+    key: APIKEY,
   }
 });
