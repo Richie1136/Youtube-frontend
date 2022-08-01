@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa'
+import './SearchBar.css'
 
 
 
@@ -15,18 +16,17 @@ const SearchBar = ({ onFormSubmit }) => {
     onFormSubmit(term)
   };
   return (
-    <div className="search-bar ui segment" style={{ 'width': '86.5%', 'backgroundColor': 'rgba(33, 33, 33, 0.98)' }}>
+    <div className="search-bar ui segment">
       <form onSubmit={onSubmit} className="ui form">
-        <div className="field" style={{ 'display': 'flex' }}>
+        <div className="field">
           <input
-            style={{ 'backgroundColor': '#121212', 'color': 'white', 'width': '95%' }}
             type="text"
             value={term}
             onChange={onInputChange}
             placeholder='Search'
           />
-          <i className="fa-solid fa-magnifying-glass" style={{ 'backgroundColor': 'hsla(0, 0%, 100%, 0.08)', 'color': 'white', 'width': '40px' }}>
-            <FaSearch style={{ 'display': 'inline-block', 'width': '100%', 'marginTop': '10px' }} />
+          <i className="fa-solid fa-magnifying-glass">
+            <FaSearch />
           </i>
         </div>
       </form>

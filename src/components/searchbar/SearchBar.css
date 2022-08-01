@@ -1,0 +1,32 @@
+.ui.form > .field > input {
+  background-color: #121212;
+  color: white;
+  width: 95%;
+}
+
+.ui.form > .field > input:focus {
+  background-color: #121212;
+  color: white;
+  width: 95%;
+}
+
+.field {
+  display: flex;
+}
+
+.search-bar.ui.segment {
+  width: 86.5%;
+  background-color: rgba(33, 33, 33, 0.98);
+}
+
+.fa-solid.fa-magnifying-glass {
+  background-color: hsla(0, 0%, 100%, 0.08);
+  color: white;
+  width: 40px;
+}
+
+.fa-solid.fa-magnifying-glass svg {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
