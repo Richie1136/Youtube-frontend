@@ -5,7 +5,7 @@ import './SearchBar.css'
 
 
 const SearchBar = ({ onFormSubmit }) => {
-  const [term, setTerm] = useState('')
+  const [term, setTerm] = useState('Sports')
 
   const onInputChange = (event) => {
     setTerm(event.target.value)
